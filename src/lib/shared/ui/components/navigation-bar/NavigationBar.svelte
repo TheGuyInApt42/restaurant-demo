@@ -53,6 +53,16 @@
 			</a>
 		</div>
 	{/if}
+	<div>
+		<a href="#">
+			<span>
+				343 S 2nd Ave,
+			</span>
+			<span>
+				Mount Vernon, NY 10550
+			</span>
+		</a>
+	</div>
 	<div class="flex flex-row items-center">
 		{#each navLinks as navLink, index (navLink.path)}
 			<a

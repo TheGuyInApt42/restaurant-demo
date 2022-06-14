@@ -4,20 +4,20 @@
 
 	const navLinks: IHeaderNavLink[] = [
 		{
-			path: '/',
-			label: 'Home',
+			path: '/about',
+			label: 'About',
 		},
 		{
-			path: '/projects',
-			label: 'Projects',
+			path: '/location',
+			label: 'Hours & Location',
 		},
 		{
-			path: '/settings',
-			label: 'Settings',
+			path: '/menus',
+			label: 'Menus',
 		},
 		{
-			path: '/users',
-			label: 'Users',
+			path: '/order',
+			label: 'Order Online',
 		},
 	];
 </script>
@@ -50,22 +50,22 @@
 .slideshow-image:nth-child(1) {
   -webkit-animation-name: kenburns-1;
           animation-name: kenburns-1;
-  z-index: 3;
+  z-index: 4;
 }
 .slideshow-image:nth-child(2) {
   -webkit-animation-name: kenburns-2;
           animation-name: kenburns-2;
-  z-index: 2;
+  z-index: 3;
 }
 .slideshow-image:nth-child(3) {
   -webkit-animation-name: kenburns-3;
           animation-name: kenburns-3;
-  z-index: 1;
+  z-index: 2;
 }
 .slideshow-image:nth-child(4) {
   -webkit-animation-name: kenburns-4;
           animation-name: kenburns-4;
-  z-index: 0;
+  z-index: 1;
 }
 
 @-webkit-keyframes kenburns-1 {
@@ -266,21 +266,21 @@ h1 small:last-child {
 </style>
 
 
+<!--https://www.milkandhoneycafeny.com/location/milk-and-honey-cafe/ -->
 
 <h1><small>Fullscreen</small> Ken Burns effect <small>without javascript</small></h1>
 
 <!-- You can add more ".slideshow-image" elements, but remember to update the "$items" variable on SCSS -->
 <div class="slideshow">
 	<Header
-		on:toggleTheme="{(e) => toggleThemeMode(e)}"
 		navLinks="{navLinks}"
 		logoImage="{'/images/author/sveltekit-blogger.svg'}"
 		title="{'Sveltekit Starter'}"
 		useThemeModeButton="{true}"
 		useTitleAndLogo="{true}"
 	/>
-  <div class="slideshow-image" style="background-image: url('https://source.unsplash.com/category/nature/1600x1400')"></div>
-  <div class="slideshow-image" style="background-image: url('https://source.unsplash.com/category/buildings/1600x1400')"></div>
-  <div class="slideshow-image" style="background-image: url('https://source.unsplash.com/category/food/1600x1400')"></div>
-  <div class="slideshow-image" style="background-image: url('https://source.unsplash.com/category/technology/1600x1400')"></div>
+  <div class="slideshow-image" style="background-image: url('images/stock1.jpg')"></div>
+  <div class="slideshow-image" style="background-image: url('images/stock3.jpg')"></div>
+  <div class="slideshow-image" style="background-image: url('images/stock4.jpg')"></div>
+  <div class="slideshow-image" style="background-image: url('images/stock2.jpg')"></div>
 </div>
