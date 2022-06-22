@@ -33,22 +33,22 @@
 	/**
 	 * @type {IHeaderNavLink}
 	 */
-	const navLinks: IHeaderNavLink[] = [
+	 const navLinks: IHeaderNavLink[] = [
 		{
-			path: '/',
-			label: 'Home',
+			path: '/about',
+			label: 'About',
 		},
 		{
-			path: '/projects',
-			label: 'Projects',
+			path: '/location',
+			label: 'Hours & Location',
 		},
 		{
-			path: '/settings',
-			label: 'Settings',
+			path: '/menus',
+			label: 'Menus',
 		},
 		{
-			path: '/users',
-			label: 'Users',
+			path: '/order',
+			label: 'Order Online',
 		},
 	];
 
@@ -77,7 +77,7 @@
 		useTitleAndLogo="{true}"
 	/>
 	<!-- End: Header Navigation -->
-	<main id="skip" class="flex flex-col justify-center px-8 bg-white dark:bg-black">
+	<main id="skip" class="flex flex-col bg-black ">
 		<!-- Start: Defaull layout slot -->
 		<RouteTransition referesh="{path}">
 			<slot />

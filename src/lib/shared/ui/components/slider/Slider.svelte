@@ -1,27 +1,3 @@
-<script lang="ts">
-	import Header from "../header/Header.svelte";
-	import type { IHeaderNavLink } from '$models/interfaces/iheader-nav-link.interface';
-
-	const navLinks: IHeaderNavLink[] = [
-		{
-			path: '/about',
-			label: 'About',
-		},
-		{
-			path: '/location',
-			label: 'Hours & Location',
-		},
-		{
-			path: '/menus',
-			label: 'Menus',
-		},
-		{
-			path: '/order',
-			label: 'Order Online',
-		},
-	];
-</script>
-
 <style>
 	.slideshow {
   position: absolute;
@@ -272,13 +248,6 @@ h1 small:last-child {
 
 <!-- You can add more ".slideshow-image" elements, but remember to update the "$items" variable on SCSS -->
 <div class="slideshow">
-	<Header
-		navLinks="{navLinks}"
-		logoImage="{'/images/author/sveltekit-blogger.svg'}"
-		title="{'Sveltekit Starter'}"
-		useThemeModeButton="{true}"
-		useTitleAndLogo="{true}"
-	/>
   <div class="slideshow-image" style="background-image: url('images/stock1.jpg')"></div>
   <div class="slideshow-image" style="background-image: url('images/stock3.jpg')"></div>
   <div class="slideshow-image" style="background-image: url('images/stock4.jpg')"></div>

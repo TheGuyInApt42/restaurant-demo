@@ -15,6 +15,7 @@
 	import HeadTags from '$components/head-tags/HeadTags.svelte';
 	import BlogPost from '$components/blog-post/BlogPost.svelte';
 	import ProjectCard from '$components/project-card/ProjectCard.svelte';
+	import Slider from "$lib/shared/ui/components/slider/Slider.svelte";
 
 	// Models
 	import type { IMetaTagProperties } from '$models/interfaces/imeta-tag-properties.interface';
@@ -81,6 +82,7 @@
 <!-- End: Header Tag -->
 
 <!-- Start: Home Page container -->
+<Slider />
 <div class="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
 	<h1 class="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
 		Hey, I’m Sveltekit Starter

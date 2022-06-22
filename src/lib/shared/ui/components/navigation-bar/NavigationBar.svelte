@@ -29,10 +29,18 @@
 	};
 </script>
 
+<style>
+	.black-gradient{
+		background-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,0) 100%);
+	}
+</style>
 
-<nav
+
+<div class="black-gradient">
+	<nav
 	class="flex flex-wrap items-center justify-between w-full  p-8 mx-auto my-0   sticky-nav  bg-opacity-60"
 >
+
 	<!-- <a href="#skip" class="skip-nav"> Skip to content </a> -->
 	{#if useTitleAndLogo}
 		<div class="w-auto p-1 text-gray-900 dark:text-gray-100 font-bold">
@@ -68,10 +76,12 @@
 			<a
 				sveltekit:prefetch
 				href="{navLink.path}"
-				class="p-1 text-white"
+				class="p-2 text-white"
 			>
 				{navLink.label}
 			</a>
 		{/each}
 	</div>
 </nav>
+</div>
+

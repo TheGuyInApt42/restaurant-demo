@@ -34,22 +34,22 @@
 	/**
 	 * @type {IHeaderNavLink}
 	 */
-	const navLinks: IHeaderNavLink[] = [
+	 const navLinks: IHeaderNavLink[] = [
 		{
-			path: '/',
-			label: 'Home',
+			path: '/about',
+			label: 'About',
 		},
 		{
-			path: '/projects',
-			label: 'Projects',
+			path: '/location',
+			label: 'Hours & Location',
 		},
 		{
-			path: '/settings',
-			label: 'Settings',
+			path: '/menus',
+			label: 'Menus',
 		},
 		{
-			path: '/users',
-			label: 'Users',
+			path: '/order',
+			label: 'Order Online',
 		},
 	];
 
