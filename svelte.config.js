@@ -52,6 +52,7 @@ const config = {
 					$core: resolve(__dirname, './src/lib/core'),
 					$utils: resolve(__dirname, './src/lib/utils'),
 					$environment: resolve(__dirname, './src/environments'),
+					$lib: resolve(__dirname, './src/lib'),
 				},
 			},
 			envPrefix: ['VITE_', 'SVELTEKIT_STARTER_'],
